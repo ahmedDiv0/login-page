@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/dolce-vita-heavy');
+@import url('https://fonts.cdnfonts.com/css/fjalla-one');
+        
+
+                                          
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+body::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(55, 41, 48, 0.4);
+    z-index: -1;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.container h1{
+    font-family: 'Dolce Vita Heavy', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+.form-control{
+    position: relative;
+    margin: 20px 0 60px;
+    width: 300px;
+}
+.form-control input{
+    background: transparent;
+    border: 0;
+    border-bottom: 2px white solid ;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: #00aeef;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid +label span{
+ color: #00aeef;
+ transform: translateY(-30px);
+}
+
+
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color:#00aeef;
+    padding: 15px;
+    font-family: 'Dolce Vita Heavy', sans-serif;
+    border: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    border-radius:30px;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.text{
+    margin-top:30px ;
+    font-family: 'Fjalla One', sans-serif;
+    color: #00aeef;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    text-align: center;
+}
+.form-control label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+}
+
+.form-control label span{
+    display: inline-block;
+    letter-spacing: -2px;  
+    font-size: 20px;
+    transition: 0.4s cubic-bezier(0.65,-0.55,0.265,1.55);
+}
